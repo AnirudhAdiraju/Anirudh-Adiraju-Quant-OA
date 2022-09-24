@@ -82,7 +82,7 @@ def scraper():
           
   #run function to get number of users than 3 months old and set value of dictionary to the value returned by this function
   #the number of accounts function goes through many of the comments on the subreddit, but the limit of the comments can be changed here to allow for more accuracy or speed
-  sub_red_info['num_less_than_three'] = get_num_less_than_three(cur_date, reddit.subreddit(sub_red).comments(limit=10))
+  sub_red_info['num_less_than_three'] = get_num_less_than_three(cur_date, reddit.subreddit(sub_red).comments(limit=100))
   return(sub_red_info)
 
 #call scraper function and then convert the dictionary that is returned to JSON in order to put it in an output JSON file
