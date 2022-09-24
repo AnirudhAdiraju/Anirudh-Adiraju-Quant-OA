@@ -65,7 +65,7 @@ def scraper():
   sub_red = get_user_input()
   
   #create a dictionary to store all subreddit info
-  sub_red_info = {'num_less_than_three': 0}
+  sub_red_info = {'title': sub_red, 'num_less_than_three': 0}
   
   #make function call about initializing the 26 weeks to scrape data
   cur_date = datetime.today()
